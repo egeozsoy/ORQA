@@ -1,0 +1,14 @@
+[
+  [
+    200,
+    "patient roll in"
+  ],
+  [
+    201,
+    "ct roll in"
+  ],
+  [
+    202,
+    "ct roll out"
+  ]
+]

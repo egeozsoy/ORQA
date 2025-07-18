@@ -1,0 +1,51 @@
+### model
+model_name_or_path: Qwen/Qwen2-VL-2B-Instruct
+previous_model_weights: /path/to/ORQADIR/Qwen2-VL/LLaMA-Factory/saves/qwen2vl_lora_sft_qlora_1000000_unfreeze8_0.5mmdrop_336res_578imgtoks/checkpoint-124806
+
+
+### method
+stage: pkd
+do_train: true
+do_eval: false
+do_predict: false
+#predict_with_generate: true
+finetuning_type: full
+
+### dataset
+dataset: orqa  # video: mllm_video_demo
+template: qwen2_vl
+cutoff_len: 2048
+#overwrite_cache: true
+preprocessing_num_workers: 12
+overwrite_cache: false
+### output
+data_json_file: /path/to/ORQADIR/data/qwen2vl_samples/train_1000000_Falsetemp_Truetempaug_0.5mmdrop_QA_drophistory0.5.json
+cache_file_name: /path/to/ORQADIR/data/cache/train_1000000_Falsetemp_Truetempaug_0.5mmdrop_QA_drophistory0.5
+fix_number_of_image_tokens: 578
+report_to: wandb
+output_dir: saves/qwen2vl_lora_sft_qlora_1000000_unfreeze8_0.5mmdrop_336res_578imgtoks_pkd_050
+run_name: qwen2vl_lora_sft_qlora_1000000_unfreeze8_0.5mmdrop_336res_578imgtoks_pkd_050
+logging_steps: 10
+save_steps: 2500
+plot_loss: true
+overwrite_output_dir: true
+flash_attn: fa2 # without this, with SDPA it simply does not work. make sure this is correct and works. but should be considering we are also using it for inference
+image_resolution: 112896 # which is 336*336, for simstation OCR image we are making an exception and keeping it at 262144 which is 512*512
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 1
+lr_scheduler_type: constant
+bf16: true
+ddp_timeout: 180000000
+pkd_start_reduction: 0.05
+pkd_end_reduction: 0.50
+pkd_end_distillation_percentage: 0.90 # The percentage of training at which `end_at` is reached. Set properly. Important: 0.9 means hidden size reduction of 90% meaning a network size reduction around 99%. 80% would mean 96% reduction. 70% would mean 90% reduction. 60% would mean 80% reduction. 50% would mean 70% reduction.
+
+### eval
+#val_size: 0.1
+per_device_eval_batch_size: 4
+eval_strategy: steps
+eval_steps: 500000000000000000000000000

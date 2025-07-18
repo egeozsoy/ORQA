@@ -1,0 +1,21 @@
+{
+  "MODEL": "SGPN",
+  "VERBOSE": true,
+  "NUM_WORKERS": 8,
+  "USE_VIS_DESC": false,
+  "fix_number_of_image_tokens": 578,
+  "image_resolution": 112896,
+  "CAMERAS_4DOR": [
+    2,
+    1,
+    3,
+    5
+  ],
+  "CAMERAS_MMOR": [
+    1,
+    4,
+    5,
+    2,
+    3
+  ]
+}

@@ -1,0 +1,462 @@
+[
+  [
+    118,
+    "patient roll in"
+  ],
+  [
+    119,
+    "patient preparation"
+  ],
+  [
+    120,
+    "patient preparation"
+  ],
+  [
+    121,
+    "patient preparation"
+  ],
+  [
+    122,
+    "patient preparation"
+  ],
+  [
+    123,
+    "patient preparation"
+  ],
+  [
+    124,
+    "patient preparation"
+  ],
+  [
+    125,
+    "patient preparation"
+  ],
+  [
+    126,
+    "patient preparation"
+  ],
+  [
+    127,
+    "patient preparation"
+  ],
+  [
+    128,
+    "patient preparation"
+  ],
+  [
+    129,
+    "patient preparation"
+  ],
+  [
+    130,
+    "patient preparation"
+  ],
+  [
+    131,
+    "patient preparation"
+  ],
+  [
+    132,
+    "patient preparation"
+  ],
+  [
+    133,
+    "patient preparation"
+  ],
+  [
+    134,
+    "patient preparation"
+  ],
+  [
+    135,
+    "patient preparation"
+  ],
+  [
+    136,
+    "patient preparation"
+  ],
+  [
+    137,
+    "patient preparation"
+  ],
+  [
+    138,
+    "patient preparation"
+  ],
+  [
+    139,
+    "patient preparation"
+  ],
+  [
+    140,
+    "ct scanning"
+  ],
+  [
+    141,
+    "c arm roll in"
+  ],
+  [
+    142,
+    "ct scanning"
+  ],
+  [
+    143,
+    "ct scanning"
+  ],
+  [
+    144,
+    "ct roll out"
+  ],
+  [
+    145,
+    "ct roll out"
+  ],
+  [
+    146,
+    "c arm preparation"
+  ],
+  [
+    147,
+    "c arm preparation"
+  ],
+  [
+    148,
+    "c arm preparation"
+  ],
+  [
+    149,
+    "c arm preparation"
+  ],
+  [
+    150,
+    "c arm preparation"
+  ],
+  [
+    151,
+    "c arm preparation"
+  ],
+  [
+    152,
+    "c arm preparation"
+  ],
+  [
+    153,
+    "c arm preparation"
+  ],
+  [
+    154,
+    "c arm scanning"
+  ],
+  [
+    155,
+    "c arm scanning"
+  ],
+  [
+    156,
+    "c arm scanning"
+  ],
+  [
+    157,
+    "c arm scanning"
+  ],
+  [
+    158,
+    "c arm scanning"
+  ],
+  [
+    159,
+    "c arm scanning"
+  ],
+  [
+    160,
+    "c arm scanning"
+  ],
+  [
+    161,
+    "c arm scanning"
+  ],
+  [
+    162,
+    "c arm scanning"
+  ],
+  [
+    163,
+    "c arm scanning"
+  ],
+  [
+    164,
+    "c arm scanning"
+  ],
+  [
+    165,
+    "c arm scanning"
+  ],
+  [
+    166,
+    "c arm scanning"
+  ],
+  [
+    167,
+    "c arm scanning"
+  ],
+  [
+    168,
+    "c arm scanning"
+  ],
+  [
+    169,
+    "c arm scanning"
+  ],
+  [
+    170,
+    "c arm scanning"
+  ],
+  [
+    171,
+    "c arm scanning"
+  ],
+  [
+    172,
+    "c arm scanning"
+  ],
+  [
+    173,
+    "c arm scanning"
+  ],
+  [
+    174,
+    "c arm scanning"
+  ],
+  [
+    175,
+    "c arm scanning"
+  ],
+  [
+    176,
+    "c arm scanning"
+  ],
+  [
+    177,
+    "c arm scanning"
+  ],
+  [
+    178,
+    "c arm scanning"
+  ],
+  [
+    179,
+    "c arm scanning"
+  ],
+  [
+    180,
+    "c arm scanning"
+  ],
+  [
+    181,
+    "c arm scanning"
+  ],
+  [
+    182,
+    "c arm scanning"
+  ],
+  [
+    183,
+    "c arm scanning"
+  ],
+  [
+    184,
+    "c arm scanning"
+  ],
+  [
+    185,
+    "c arm scanning"
+  ],
+  [
+    186,
+    "c arm scanning"
+  ],
+  [
+    187,
+    "c arm scanning"
+  ],
+  [
+    188,
+    "c arm scanning"
+  ],
+  [
+    189,
+    "c arm scanning"
+  ],
+  [
+    190,
+    "c arm scanning"
+  ],
+  [
+    191,
+    "c arm scanning"
+  ],
+  [
+    192,
+    "c arm scanning"
+  ],
+  [
+    193,
+    "c arm scanning"
+  ],
+  [
+    194,
+    "c arm scanning"
+  ],
+  [
+    195,
+    "c arm scanning"
+  ],
+  [
+    196,
+    "c arm scanning"
+  ],
+  [
+    197,
+    "c arm scanning"
+  ],
+  [
+    198,
+    "c arm scanning"
+  ],
+  [
+    199,
+    "c arm scanning"
+  ],
+  [
+    200,
+    "c arm scanning"
+  ],
+  [
+    201,
+    "c arm scanning"
+  ],
+  [
+    202,
+    "c arm scanning"
+  ],
+  [
+    203,
+    "c arm scanning"
+  ],
+  [
+    204,
+    "c arm scanning"
+  ],
+  [
+    205,
+    "c arm scanning"
+  ],
+  [
+    206,
+    "c arm scanning"
+  ],
+  [
+    207,
+    "c arm scanning"
+  ],
+  [
+    208,
+    "c arm scanning"
+  ],
+  [
+    209,
+    "c arm scanning"
+  ],
+  [
+    210,
+    "c arm scanning"
+  ],
+  [
+    211,
+    "c arm scanning"
+  ],
+  [
+    212,
+    "c arm scanning"
+  ],
+  [
+    213,
+    "c arm scanning"
+  ],
+  [
+    214,
+    "c arm scanning"
+  ],
+  [
+    215,
+    "c arm scanning"
+  ],
+  [
+    216,
+    "c arm scanning"
+  ],
+  [
+    217,
+    "c arm scanning"
+  ],
+  [
+    218,
+    "c arm roll out"
+  ],
+  [
+    219,
+    "c arm roll out"
+  ],
+  [
+    220,
+    "ct roll out"
+  ],
+  [
+    221,
+    "ct roll out"
+  ],
+  [
+    222,
+    "ct roll out"
+  ],
+  [
+    223,
+    "ct roll out"
+  ],
+  [
+    224,
+    "ct roll out"
+  ],
+  [
+    225,
+    "patient roll out"
+  ],
+  [
+    226,
+    "patient roll out"
+  ],
+  [
+    227,
+    "patient roll out"
+  ],
+  [
+    228,
+    "patient roll out"
+  ],
+  [
+    229,
+    "sterile preparation"
+  ],
+  [
+    230,
+    "sterile preparation"
+  ],
+  [
+    231,
+    "sterile preparation"
+  ],
+  [
+    232,
+    "sterile preparation"
+  ]
+]
