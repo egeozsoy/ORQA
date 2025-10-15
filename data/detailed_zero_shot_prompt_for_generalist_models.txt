@@ -1,0 +1,99 @@
+"""
+All Entities: [ "anaesthetist", "anesthesia equipment", "assistant surgeon", "c arm", "circulator", "drape", "drill", "hammer", "head surgeon", "instrument", "instrument table", "mako robot", "monitor", "mps", "mps station", "nurse", "operating table", "patient", "saw", "secondary table", "student", "tracker", "unrelated person"]
+All Predicates: ["assisting", "calibrating", "cementing", "cleaning", "closeTo", "cutting", "drilling", "hammering", "holding", "lyingOn", "manipulating", "preparing", "sawing", "scanning", "suturing", "touching"]
+All Tools: ['suction cannula', 'tweezers', 'retractor','needle holders', 'mouth gag', 'raspatory', 'forceps', 'scissors', 'gauze', 'drill', 'electric cautery', 'syringe', 'bipolar forceps', 'saw', 'scalpel', 'hook', 'hammer', 'cementer', 'skewer']
+- count_people
+    “How many people are in the OR?”
+    Answer: a non-negative integer.
+    Format: output exactly one integer (e.g. 5) with no extra text.
+- role_people
+    “Who is in the OR?”
+    Answer: one or more roles from
+    Format: comma-separated lowercase roles, no “and” or extra words (e.g. nurse, circulator, anaesthetist).
+- interaction
+    “What is the interaction of <subject> with <object>?”
+    Answer: one relation/predicate.
+    Format: exactly that relation token in lowercase (e.g. assisting).
+- tool_equipment_attribute
+    “What is the <attribute> of the <equipment>?”
+    Answer: appropriate value (e.g. pink, large, straight, glossy).
+    Format: the value in lowercase, no extra words (e.g. pink).
+- time_until_step
+    “How long until <action>?”
+    Answer: time in seconds.
+    Format: <integer> seconds (e.g. 816 seconds).
+- status_action
+    “What is the status of <action>?”
+    Answer: percent complete.
+    Format: <integer>% (no space, e.g. 52%).
+- current_action
+    “What is currently happening?”
+    Answer: one action/predicate label
+    Format: single lowercase word or gerund (e.g. hammering).
+- did_happen
+    “Did <action> happen?”
+    Answer: yes or no.
+    Format: yes or no.
+- is_base_array_visible
+    “Is the base array visible?”
+    Answer: yes or no.
+    Format: yes or no.
+- is_robot_calibrated
+    “Is the robot calibrated?”
+    Answer: yes or no.
+    Format: yes or no.
+- sterility_breach
+    “Is there a sterility breach happening?”
+    Answer: yes or no.
+    Format: yes or no.
+- current_robot_step
+    “What is the current step of the robot?”
+    Answer: one of the exact robot phase strings from {Initial Calibration by MPS, Install base array by nurse, Dressing the robot, to make it sterile, Remove calibration Array, Install the Saw by nurse, Install calibration array, Calibrate the robot by nurse, Install actual Saw tip, Remove calibration Array}.
+    Format: output that exact string, no extra text.
+- next_robot_step
+    “What is the next step for the robot?”
+    Answer: one of the exact robot phase strings from {Initial Calibration by MPS, Install base array by nurse, Dressing the robot, to make it sterile, Remove calibration Array, Install the Saw by nurse, Install calibration array, Calibrate the robot by nurse, Install actual Saw tip, Remove calibration Array}.
+    Format: output that exact string, no extra text/
+- where_2d
+    “Where is <entity> in the image?”
+    Answer: its 2D bounding box.
+    Format: four integers: x_min, x_max, y_min, y_max (e.g. 507, 580, 0, 308).
+- where_3d
+    “Where is <entity> in the scene?”
+    Answer: its 3D coordinate.
+    Format: three integers: x, y, z (e.g. 276, 294, -287).
+- distance_3d
+    “How far is <entity1> from <entity2>?”
+    Answer: distance in millimeters.
+    Format: <integer> mm (e.g. 3064 mm).
+- tools_used
+    “Which tools are currently being used?”
+    Answer: one or more tool names. 
+    Format: comma-separated lowercase names, no extra words (e.g. hook, gauze, suction cannula).
+- current_scene_graph
+    “What is the current scene graph?”
+    Answer: all subject–object–relation triples.
+    Format: wrap in <SG>…</SG>, semicolon-separate triples, each as subject,object,relation (e.g. <SG> assistant surgeon,patient,preparing; nurse,assistant surgeon,assisting; … </SG>).
+- list_all_entities
+    “List all entities in the OR.”
+    Answer: all detected entity names
+    Format: comma-separated lowercase names, no extra text (e.g. human 2, operating table, ct machine).
+- list_all_entities_ordered_2D
+    “List all entities in the OR from left to right.”
+    Answer: same as above, but sorted left-to-right.
+    Format: comma-separated in left-to-right order (e.g. operating table, human 1, c-arm, ct machine).
+- gaze_location
+    “Where is the surgeon looking at?”
+    Answer: gaze point coordinates.
+    Format: two integers: x, y (e.g. 495, 495).
+- gaze_object
+    “What is the surgeon looking at?”
+    Answer: the name of the gazed entity (e.g. retractor, hook).
+    Format: single lowercase entity name.
+- monitor_reading
+    “Summarize the information on the monitor.”
+    Answer: free-form English summary.
+    Format: plain text paragraph or sentence(s), no quotation marks, no introductory labels.
+    
+In addition to the visual input from the operating room, you are provided with a set of helpful information. Use all this information to answer the following question in a strictly machine-parsable format, according to the instructions. Question: 
+"""
